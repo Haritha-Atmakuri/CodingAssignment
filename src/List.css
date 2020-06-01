@@ -1,0 +1,54 @@
+.List {
+    display: flex;
+}
+
+.List > div
+{
+  flex:1 1 auto;
+  /* border:1px red solid; */
+  margin:5px;  
+  margin-top: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border: 1px solid;
+    
+  
+}
+
+ .hoverButton {
+     display: none !important;
+     top:50%;
+     margin: 0 auto;
+     margin-top: -15px;
+     width: 100px;
+}
+.hoverButton:hover {
+    display: inline !important;
+}
+
+.movieImage:hover + .hoverButton {
+    display: inline !important;
+}
+
+.image{
+    width: 57px;
+    
+     float: left !important;
+  margin-top: -15px !important;
+}
+.navbar{
+    margin-top: 10px;
+}
+.text{
+    margin: 0 auto;
+}
+
+.headings{
+  margin:0 auto;
+    padding-top: 10px;
+    background-color: #563d7c;
+    padding-bottom: 10px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
