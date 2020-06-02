@@ -4,7 +4,7 @@ export default class Navigation extends Component{
     render(){
         return(
             <div>
-                <nav className="navbar navbar-expand-lg navbar-light bg-light" className="navbar">
+                <nav className="navbar navbar-expand-lg navbar-dark bg-dark" >
                 <a className="navbar-brand" href="#">
                     <img src="netflixLogo.png" className="image"/>
                 </a>

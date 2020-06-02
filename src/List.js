@@ -1,35 +1,51 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import './List.css';
 
 export default function List(props) {
-    const list = props.myList.map((data,index)=><div key={index}>
-      
-      <div className="container">
-          <div className="movieImage">
-              <img src={data.img}/>
-          </div>
-      
-      <div className="hoverButton">
-      <button className="btn btn-danger" onClick={()=>props.removeList(data.id)}>Remove</button>
-        </div>
+  const myDiv = useRef(null);
+  const [left, setLeft] = useState(0);
+  const [right, setRight] = useState(1);
+  const list = props.myList.map((data, index) => <div key={index}>
+
+    <div className="container">
+      <div className="movieImage" style={{ backgroundImage: `url(${data.img})` }}>
+        {/* <img src={data.img} style={{width:"75%"}}/> */}
+
+        <button className="btn btn-danger" onClick={() => props.removeList(data.id)}>Remove</button>
       </div>
-      <div>
-    <label>{data.title}</label>
+
+      {/* <div className="hoverButton">
+      <button className="btn btn-danger" onClick={()=>props.removeList(data.id)}>Remove</button>
+        </div> */}
     </div>
-      {/* <div className="container"><div><img src={data.img}/>
+    <div className="title">
+      {data.title}
+    </div>
+
+    {/* <div className="container"><div><img src={data.img}/>
 
       <button className="btn btn-danger" onClick={()=>props.removeList(data.id)}>Remove</button>
       </div>
     <label>{data.title}</label> */}
-    </div>)
+  </div>)
   return (
-    <React.Fragment>
-      {props.myList.length > 0 ?<h2 className="headings">My List</h2>:''}
-    <div className="List">
-   
+    <div className="mainList">
+      {props.myList.length > 0 ? <h2 className="headings">My List</h2> : ''}
+      <div className="List" ref={myDiv}>
+
         {list}
 
+      </div>
+      {props.myList.length > 3 && left > 0 ? <a className="prev" onClick={() => {
+        myDiv.current.scrollLeft -= 150
+        setLeft(myDiv.current.scrollLeft);
+
+      }}>&#10094;</a> : ''}
+      {props.myList.length > 3 && left != right ? <a className="next" onClick={() => {
+        myDiv.current.scrollLeft += 150;
+        setRight(left)
+        setLeft(myDiv.current.scrollLeft);
+      }}>&#10095;</a> : ''}
     </div>
-    </React.Fragment>
   );
 }
