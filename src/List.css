@@ -3,6 +3,7 @@
     overflow: scroll;
     white-space: nowrap;  
     overflow-x: hidden;
+    color:white;
 }
 
 
@@ -10,16 +11,13 @@
 {
     display: inline-block;
     width:30%;
-    border: 1px solid;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  /* flex:1 1 auto;
- border:1px red solid; 
-  margin:5px;  
-  margin-top: 20px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  border: 1px solid; */
+    
+ 
     
   
+}
+.background{
+    background-color: black;
 }
 .mainList {
     position: relative;
@@ -40,7 +38,7 @@
     margin-left: -46px;
 }
  .hoverButton {
-     /* display: none !important; */
+    
      top:50%;
      margin: 0 auto;
      margin-top: -15px;
@@ -69,7 +67,7 @@
 
     
      float: left !important;
-  margin-top: 8px !important;
+  
 }
 .navbar{
     margin-top: 10px;
@@ -79,23 +77,22 @@
 .text{
     margin: 0 auto;
     color:white;
+    font-family: initial;
 }
 
 .headings{
- /* // margin:0 auto; */
+
     padding-top: 20px;
-    /* background-color: #563d7c; */
+    
     padding-bottom: 10px;
-    /* float:left; */
+ 
     
      text-align: left;
      margin-top: 15px;
      margin-left: 12px;
-    
-    /* left: 1px;
-    top: 30px; */
-    /* padding-bottom: 50px;
-    padding-top: 30px; */
+     color: white;
+     font-family: initial;
+   
 
 }
 .container {
@@ -119,7 +116,7 @@
     width: auto;
     padding: 16px;
     margin-top: -22px;
-    color: white;
+    color: white !important;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
@@ -135,5 +132,6 @@
   }
   .title{
       margin-right:60px;
+      font-family: initial
   }
   

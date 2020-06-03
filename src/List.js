@@ -9,28 +9,18 @@ export default function List(props) {
 
     <div className="container">
       <div className="movieImage" style={{ backgroundImage: `url(${data.img})` }}>
-        {/* <img src={data.img} style={{width:"75%"}}/> */}
 
-        <button className="btn btn-danger" onClick={() => props.removeList(data.id)}>Remove</button>
+
+        <button className={props.btnClass} onClick={() => props.removeList(data.id)}>{props.btnName}</button>
       </div>
-
-      {/* <div className="hoverButton">
-      <button className="btn btn-danger" onClick={()=>props.removeList(data.id)}>Remove</button>
-        </div> */}
     </div>
     <div className="title">
       {data.title}
     </div>
-
-    {/* <div className="container"><div><img src={data.img}/>
-
-      <button className="btn btn-danger" onClick={()=>props.removeList(data.id)}>Remove</button>
-      </div>
-    <label>{data.title}</label> */}
   </div>)
   return (
     <div className="mainList">
-      {props.myList.length > 0 ? <h2 className="headings">My List</h2> : ''}
+      {props.myList.length > 0 ? <h2 className="headings">{props.heading}</h2> : ''}
       <div className="List" ref={myDiv}>
 
         {list}
