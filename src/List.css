@@ -4,6 +4,8 @@
     white-space: nowrap;  
     overflow-x: hidden;
     color:white;
+    margin-right: 15%;
+    margin-left: 15%;
 }
 
 
@@ -48,10 +50,11 @@
     display: inline !important;
 }
 .movieImage {
-    width : 300px;
+    width : 250px;
     height: 300px;
     background-repeat: no-repeat;
     background-size: cover;
+    
 
 }
 
@@ -98,6 +101,7 @@
 .container {
     height: 350px;
     position: relative;
+    align-items: center;
 }
 .container:hover > div > .btn-danger {
     display: inline-block !important;
@@ -131,7 +135,7 @@
       right: 1%;
   }
   .title{
-      margin-right:60px;
+      margin-right:5px;
       font-family: initial
   }
   

@@ -27,12 +27,12 @@ export default function List(props) {
 
       </div>
       {props.myList.length > 3 && left > 0 ? <a className="prev" onClick={() => {
-        myDiv.current.scrollLeft -= 150
+        myDiv.current.scrollLeft -= 250
         setLeft(myDiv.current.scrollLeft);
 
       }}>&#10094;</a> : ''}
       {props.myList.length > 3 && left != right ? <a className="next" onClick={() => {
-        myDiv.current.scrollLeft += 150;
+        myDiv.current.scrollLeft += 250;
         setRight(left)
         setLeft(myDiv.current.scrollLeft);
       }}>&#10095;</a> : ''}
