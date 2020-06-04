@@ -13,10 +13,13 @@ export default function List(props) {
 
         <button className={props.btnClass} onClick={() => props.removeList(data.id)}>{props.btnName}</button>
       </div>
-    </div>
-    <div className="title">
+      <div className="title">
       {data.title}
     </div>
+    </div>
+    {/* <div className="title">
+      {data.title}
+    </div> */}
   </div>)
   return (
     <div className="mainList">

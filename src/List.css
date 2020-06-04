@@ -1,8 +1,9 @@
 .List {
     display: block;
-    overflow: scroll;
+    overflow:scroll;
     white-space: nowrap;  
     overflow-x: hidden;
+    overflow-y:hidden;
     color:white;
     margin-right: 15%;
     margin-left: 15%;
@@ -27,14 +28,14 @@
 
 .btn-danger {
     position: absolute;
-    top: 90%;
+    top: 60%;
     margin-left: -46px;
     display: none !important; 
     width: 100px;
 }
 .btn-success {
     position: absolute;
-    top: 90%;
+    top: 60%;
     display: none !important; 
     width: 100px;
     margin-left: -46px;
@@ -50,8 +51,8 @@
     display: inline !important;
 }
 .movieImage {
-    width : 250px;
-    height: 300px;
+    width : 200px;
+    height: 200px;
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -135,7 +136,8 @@
       right: 1%;
   }
   .title{
-      margin-right:5px;
-      font-family: initial
+      margin-right:50px;
+      font-family: initial;
+      margin-top: 19%;
   }
   
