@@ -1,19 +1,24 @@
 .List {
-    display: block;
+  
     overflow:scroll;
     white-space: nowrap;  
     overflow-x: hidden;
     overflow-y:hidden;
     color:white;
-    margin-right: 15%;
-    margin-left: 15%;
+    
+
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 
 .List > div
 {
-    display: inline-block;
-    width:30%;
+   
+    margin-right: 50px;
     
  
     
@@ -28,17 +33,22 @@
 
 .btn-danger {
     position: absolute;
-    top: 60%;
-    margin-left: -46px;
+   
+    top:210px;
+ 
+    
+    margin-left: -50px;
     display: none !important; 
     width: 100px;
 }
 .btn-success {
     position: absolute;
-    top: 60%;
+   
+    top:210px;
     display: none !important; 
     width: 100px;
-    margin-left: -46px;
+    margin-left:-50px;
+    margin-right:100px;
 }
  .hoverButton {
     
@@ -114,30 +124,10 @@
 .container + div {
     margin-left: -7%;
 }
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 150px;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white !important;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    font-size: 50px;
-  }
-  .prev {
-      left: 1%;
-  }
-  .next {
-      right: 1%;
-  }
+
   .title{
-      margin-right:50px;
+      margin-right:3%;
       font-family: initial;
-      margin-top: 19%;
+      margin-top: 25%;
   }
   
